@@ -1,63 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive PDF Portfolio</title>
-    
-    <style>
-        /* Global styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.5;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<style>
+        /* Center the text */
+        h1, p {
             text-align: center;
-            font-size: 2.5rem;
         }
-
-        /* PDF iframe styling */
-        .pdf-container {
-            width: 100%; /* Full width */
-            height: 100vh; /* Full height of the viewport */
-            overflow: auto; /* Add scrollbar if needed */
-            display: flex; /* Flexbox for centering */
-            justify-content: center; /* Center the iframe */
-            align-items: center; /* Center the iframe vertically */
+	/* Justify the text */
+        p, h2, a {
+            text-align: justify;
         }
-
-        iframe {
-            width: 100%; /* Full width of the container */
-            height: 100%; /* Full height of the container */
-            border: none; /* Remove border */
+	/* Center the embed (PDF) */
+        embed {
+            display: block;
+            margin: 0 auto;
         }
-
-        /* Media queries for smaller screens */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem; /* Adjust heading size */
-            }
+	/* Center the link as a button */
+        a {
+            display: block;
+	    padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 5px;
         }
-        
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.5rem; /* Further adjust heading size */
-            }
-        }
-    </style>
+	
+	</style>
 </head>
 <body>
+	<h1>Welcome to My Portfolio</h1>
+	<p>Hello! I am Vasu Patel, motivated and passionate Mechanical Engineer with expertise in automation systems, manufacturing processes, and mechanical design. Experienced in delivering 	efficient and cost-effective solutions, leading interdisciplinary projects, and collaborating with cross-functional teams. Proven ability to design and optimize systems, enhance 	manufacturing efficiency, and solve complex engineering challenges. Strong background in CAD software, structural analysis, product design, and sustainable engineering with hands-on 	experience in prototyping, troubleshooting, and process improvement.</p>
 
-    <div class="container">
+	 <div class="container">
         <header>
             <h1>My Portfolio PDF</h1>
         </header>
@@ -66,7 +44,7 @@
             <!-- Embed PDF file -->
             <iframe src="Vasu Patel (Portfolio).pdf" allowfullscreen></iframe>
         </div>
-    </div>
+        </div>
 
 </body>
 </html>
