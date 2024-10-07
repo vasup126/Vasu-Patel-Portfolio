@@ -12,11 +12,35 @@
         p, h2, a {
             text-align: justify;
         }
-	/* Center the embed (PDF) */
-        embed {
-            display: block;
-            margin: 0 auto;
+	/* PDF iframe styling */
+        .pdf-container {
+            width: 100%; /* Full width */
+            height: 100vh; /* Full height of the viewport */
+            overflow: auto; /* Add scrollbar if needed */
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Center the iframe */
+            align-items: center; /* Center the iframe vertically */
         }
+
+        iframe {
+            width: 100%; /* Full width of the container */
+            height: 100%; /* Full height of the container */
+            border: none; /* Remove border */
+        }
+
+        /* Media queries for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Adjust heading size */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem; /* Further adjust heading size */
+            }
+        }
+
 	/* Center the link as a button */
         a {
             display: block;
